@@ -1,0 +1,76 @@
+* {
+  font-family: "obviously", "Helvetica", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "helvetica-bold";
+  src: url(./assets/fonts/Helvetica-Bold.otf);
+}
+
+@font-face {
+  font-family: "geo-bold";
+  src: url(./assets/fonts/Geologica_Auto-Black.ttf);
+}
+
+@font-face {
+  font-family: "rubik-light";
+  src: url(./assets/fonts/Rubik-light.ttf);
+}
+.heading {
+  font-family: "geo-bold";
+}
+
+.title {
+  font-family: "helvetica-bold";
+}
+
+.small-text {
+  font-family: "rubik-light";
+}
+
+@keyframes slideanimation-one {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.slide-animation {
+  animation-name: slideanimation-one;
+  animation-duration: 15s; /* Set the animation duration here */
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.logo-slide-animation {
+  animation-name: slideanimation-one;
+  animation-duration: 15s; /* Set the animation duration here */
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.slide-out-animation {
+  animation: slideOut 1.5s linear infinite;
+  transform-origin: center;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
